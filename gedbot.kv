@@ -1,0 +1,16 @@
+<RootWidget>
+    display: display
+    Button:
+        id: display
+        #text_size: '18sp'
+        color: 1, 1, 1, 1
+        text: "Clique aqui para gerar sua desculpa"
+        on_press: root.gedbot()
+        background_color: 0, 0, 0, 1
+    FloatLayout:
+        size_hint: 1, .1
+        CopyToClip:
+            text: "COPIAR"
+            on_press: self.copyto()
+
+
